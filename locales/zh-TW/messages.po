@@ -13,11 +13,11 @@ msgstr ""
 "Language-Team: \n"
 "Plural-Forms: \n"
 
-#: app/index.tsx:28
+#: app/index.tsx:29
 msgid "Available Utilities"
 msgstr "可用的工具"
 
-#: app/index.tsx:46
+#: app/index.tsx:47
 msgid "Choose a utility from the list above to get started."
 msgstr "選擇上面的工具列表以開始。"
 
@@ -29,7 +29,7 @@ msgstr "相應的快門速度:"
 msgid "Enter Custom Frame Rate (fps):"
 msgstr "輸入自定義的幀率 (fps):"
 
-#: app/index.tsx:11
+#: app/index.tsx:12
 msgid "Flicker-free video"
 msgstr "無閃爍視頻"
 
@@ -61,6 +61,6 @@ msgstr "選擇電源頻率 (Hz):"
 msgid "Selected Frame Rate:"
 msgstr "選擇的幀率:"
 
-#: app/index.tsx:23
+#: app/index.tsx:24
 msgid "Welcome to Crying Cat"
 msgstr "歡迎來到哭泣的貓"

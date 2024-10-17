@@ -13,11 +13,11 @@ msgstr ""
 "Language-Team: \n"
 "Plural-Forms: \n"
 
-#: app/index.tsx:28
+#: app/index.tsx:29
 msgid "Available Utilities"
 msgstr "Available Utilities"
 
-#: app/index.tsx:46
+#: app/index.tsx:47
 msgid "Choose a utility from the list above to get started."
 msgstr "Choose a utility from the list above to get started."
 
@@ -29,7 +29,7 @@ msgstr "Corresponding Shutter Speed:"
 msgid "Enter Custom Frame Rate (fps):"
 msgstr "Enter Custom Frame Rate (fps):"
 
-#: app/index.tsx:11
+#: app/index.tsx:12
 msgid "Flicker-free video"
 msgstr "Flicker-free video"
 
@@ -61,6 +61,6 @@ msgstr "Select Power Frequency (Hz):"
 msgid "Selected Frame Rate:"
 msgstr "Selected Frame Rate:"
 
-#: app/index.tsx:23
+#: app/index.tsx:24
 msgid "Welcome to Crying Cat"
 msgstr "Welcome to Crying Cat"

@@ -6,6 +6,7 @@ import { ThemedText } from '@/components/ThemedText';
 import { ThemedView } from '@/components/ThemedView';
 import { Colors } from '@/constants/Colors';
 import { t } from "@lingui/macro";
+import { CryingCatAnimation } from '@/components/CryingCatAnimation';
 
 const utilities = [
   { name: t`Flicker-free video`, route: "/FlickerFreeVideo" },
@@ -18,7 +19,7 @@ export default function Index() {
     <ThemedView style={styles.container}>
       <ScrollView contentContainerStyle={styles.scrollContent}>
         <View style={styles.header}>
-          <HelloWave />
+          <CryingCatAnimation />
           <ThemedText type="title" style={styles.title}>
             <Trans>Welcome to Crying Cat</Trans>
           </ThemedText>

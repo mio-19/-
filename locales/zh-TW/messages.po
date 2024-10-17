@@ -21,6 +21,14 @@ msgstr "可用的工具"
 msgid "Choose a utility from the list above to get started."
 msgstr "選擇上面的工具列表以開始。"
 
+#: app/FlickerFreeVideo.tsx:138
+msgid "Corresponding Shutter Speed:"
+msgstr "相應的快門速度:"
+
+#: app/FlickerFreeVideo.tsx:98
+msgid "Enter Custom Frame Rate (fps):"
+msgstr "輸入自定義的幀率 (fps):"
+
 #: app/index.tsx:11
 msgid "Flicker-free video"
 msgstr "無閃爍視頻"
@@ -29,9 +37,29 @@ msgstr "無閃爍視頻"
 msgid "Flicker-free Video"
 msgstr "無閃爍視頻"
 
-#: app/FlickerFreeVideo.tsx:10
-msgid "Flicker-free video utility coming soon."
-msgstr "即將推出的無閃爍視頻工具。"
+#: app/FlickerFreeVideo.tsx:53
+msgid "Flicker-Free Video Calculator"
+msgstr "無閃爍視頻計算器"
+
+#: app/FlickerFreeVideo.tsx:143
+msgid "Please enter a valid frame rate."
+msgstr "請輸入有效的幀率。"
+
+#: app/FlickerFreeVideo.tsx:135
+msgid "Safe Shutter Angle:"
+msgstr "安全的快門角度:"
+
+#: app/FlickerFreeVideo.tsx:74
+msgid "Select Frame Rate (fps):"
+msgstr "選擇幀率 (fps):"
+
+#: app/FlickerFreeVideo.tsx:59
+msgid "Select Power Frequency (Hz):"
+msgstr "選擇電源頻率 (Hz):"
+
+#: app/FlickerFreeVideo.tsx:125
+msgid "Selected Frame Rate:"
+msgstr "選擇的幀率:"
 
 #: app/index.tsx:23
 msgid "Welcome to Crying Cat"

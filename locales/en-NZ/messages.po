@@ -21,6 +21,14 @@ msgstr "Available Utilities"
 msgid "Choose a utility from the list above to get started."
 msgstr "Choose a utility from the list above to get started."
 
+#: app/FlickerFreeVideo.tsx:138
+msgid "Corresponding Shutter Speed:"
+msgstr "Corresponding Shutter Speed:"
+
+#: app/FlickerFreeVideo.tsx:98
+msgid "Enter Custom Frame Rate (fps):"
+msgstr "Enter Custom Frame Rate (fps):"
+
 #: app/index.tsx:11
 msgid "Flicker-free video"
 msgstr "Flicker-free video"
@@ -29,9 +37,29 @@ msgstr "Flicker-free video"
 msgid "Flicker-free Video"
 msgstr "Flicker-free Video"
 
-#: app/FlickerFreeVideo.tsx:10
-msgid "Flicker-free video utility coming soon."
-msgstr "Flicker-free video utility coming soon."
+#: app/FlickerFreeVideo.tsx:53
+msgid "Flicker-Free Video Calculator"
+msgstr "Flicker-Free Video Calculator"
+
+#: app/FlickerFreeVideo.tsx:143
+msgid "Please enter a valid frame rate."
+msgstr "Please enter a valid frame rate."
+
+#: app/FlickerFreeVideo.tsx:135
+msgid "Safe Shutter Angle:"
+msgstr "Safe Shutter Angle:"
+
+#: app/FlickerFreeVideo.tsx:74
+msgid "Select Frame Rate (fps):"
+msgstr "Select Frame Rate (fps):"
+
+#: app/FlickerFreeVideo.tsx:59
+msgid "Select Power Frequency (Hz):"
+msgstr "Select Power Frequency (Hz):"
+
+#: app/FlickerFreeVideo.tsx:125
+msgid "Selected Frame Rate:"
+msgstr "Selected Frame Rate:"
 
 #: app/index.tsx:23
 msgid "Welcome to Crying Cat"

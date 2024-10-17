@@ -6,17 +6,35 @@ import { Stack } from 'expo-router';
 import * as SplashScreen from 'expo-splash-screen';
 import { useEffect } from 'react';
 import 'react-native-reanimated';
+import * as Localization from 'expo-localization'; // Import expo-localization
 
 import { useColorScheme } from '@/hooks/useColorScheme';
 
-// Import the compiled messages for the default locale
+// Import the compiled messages for your locales
 import { messages as enNZMessages } from '../locales/en-NZ/messages';
 import { messages as zhTWMessages } from '../locales/zh-TW/messages';
 
-// Load messages and activate the default locale
+// Load messages for the supported locales
 i18n.load('en-NZ', enNZMessages);
 i18n.load('zh-TW', zhTWMessages);
-i18n.activate('zh-TW');
+
+// Get the device's preferred locales
+const deviceLocales = Localization.getLocales();
+let deviceLocale = 'zh-TW'; // Set a default locale
+
+if (deviceLocales && deviceLocales.length > 0) {
+  const localeCode = deviceLocales[0].languageTag;
+
+  // Map device locale to supported locale
+  if (localeCode.startsWith('en')) {
+    deviceLocale = 'en-NZ';
+  } else if (localeCode.startsWith('zh')) {
+    deviceLocale = 'zh-TW';
+  }
+}
+
+// Activate the appropriate locale
+i18n.activate(deviceLocale);
 
 // Prevent the splash screen from auto-hiding before asset loading is complete.
 SplashScreen.preventAutoHideAsync();
@@ -31,7 +49,7 @@ export default function RootLayout() {
     if (loaded) {
       SplashScreen.hideAsync();
     }
-    // Add `i18n` to the dependency array if you're dynamically changing locales
+    // You can add `i18n` to the dependency array if you're dynamically changing locales
   }, [loaded]);
 
   if (!loaded) {

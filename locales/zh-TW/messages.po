@@ -6,7 +6,29 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: @lingui/cli\n"
 "Language: zh-TW\n"
+"Project-Id-Version: \n"
+"Report-Msgid-Bugs-To: \n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Plural-Forms: \n"
 
-#: app/index.tsx:14
-msgid "Edit app/index.tsx to edit this screen."
-msgstr "編輯 app/index.tsx 以編輯此螢幕。"
+#: app/index.tsx:39
+msgid "{0}"
+msgstr ""
+
+#: app/index.tsx:27
+msgid "Available Utilities"
+msgstr "可用的工具"
+
+#: app/index.tsx:45
+msgid "Choose a utility from the list above to get started."
+msgstr "選擇上面的工具列表以開始。"
+
+#: app/FlickerFreeVideo.tsx:15
+msgid "Flicker-free video utility coming soon."
+msgstr "即將推出的無閃爍視頻工具。"
+
+#: app/index.tsx:22
+msgid "Welcome to Crying Cat"
+msgstr "歡迎來到哭泣的貓"

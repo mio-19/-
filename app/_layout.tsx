@@ -33,7 +33,7 @@ export default function RootLayout() {
   return (
     <I18nProvider i18n={i18n}>
       <Stack>
-        <Stack.Screen name="index" />
+        <Stack.Screen name="index" options={{ title: '😿 Crying Cat' }} />
       </Stack>
     </I18nProvider>
   );

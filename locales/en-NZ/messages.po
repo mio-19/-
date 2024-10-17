@@ -6,7 +6,29 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: @lingui/cli\n"
 "Language: en-NZ\n"
+"Project-Id-Version: \n"
+"Report-Msgid-Bugs-To: \n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Plural-Forms: \n"
 
-#: app/index.tsx:14
-msgid "Edit app/index.tsx to edit this screen."
-msgstr "Edit app/index.tsx to edit this screen."
+#: app/index.tsx:39
+msgid "{0}"
+msgstr "{0}"
+
+#: app/index.tsx:27
+msgid "Available Utilities"
+msgstr "Available Utilities"
+
+#: app/index.tsx:45
+msgid "Choose a utility from the list above to get started."
+msgstr "Choose a utility from the list above to get started."
+
+#: app/FlickerFreeVideo.tsx:15
+msgid "Flicker-free video utility coming soon."
+msgstr "Flicker-free video utility coming soon."
+
+#: app/index.tsx:22
+msgid "Welcome to Crying Cat"
+msgstr "Welcome to Crying Cat"

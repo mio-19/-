@@ -1,4 +1,5 @@
 import { Image, StyleSheet, Platform } from 'react-native';
+import { Trans } from '@lingui/macro'; // Import Trans macro
 
 import { HelloWave } from '@/components/HelloWave';
 import ParallaxScrollView from '@/components/ParallaxScrollView';
@@ -16,18 +17,24 @@ export default function HomeScreen() {
         />
       }>
       <ThemedView style={styles.titleContainer}>
-        <ThemedText type="title">Welcome!</ThemedText>
+        <ThemedText type="title">
+          <Trans>Welcome!</Trans>
+        </ThemedText>
         <HelloWave />
       </ThemedView>
       <ThemedView style={styles.stepContainer}>
-        <ThemedText type="subtitle">Step 1: Try it</ThemedText>
+        <ThemedText type="subtitle">
+          <Trans>Step 1: Try it</Trans>
+        </ThemedText>
         <ThemedText>
-          Edit <ThemedText type="defaultSemiBold">app/(tabs)/index.tsx</ThemedText> to see changes.
-          Press{' '}
-          <ThemedText type="defaultSemiBold">
-            {Platform.select({ ios: 'cmd + d', android: 'cmd + m' })}
-          </ThemedText>{' '}
-          to open developer tools.
+          <Trans>
+            Edit <ThemedText type="defaultSemiBold">app/(tabs)/index.tsx</ThemedText> to see changes.
+            Press{' '}
+            <ThemedText type="defaultSemiBold">
+              {Platform.select({ ios: 'cmd + d', android: 'cmd + m' })}
+            </ThemedText>{' '}
+            to open developer tools.
+          </Trans>
         </ThemedText>
       </ThemedView>
       <ThemedView style={styles.stepContainer}>

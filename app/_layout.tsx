@@ -7,6 +7,8 @@ import * as Localization from 'expo-localization';
 import { messages as enNZMessages } from '../locales/en-NZ/messages';
 import { messages as zhTWMessages } from '../locales/zh-TW/messages';
 import { Colors } from '@/constants/Colors';
+import { Trans } from '@lingui/macro';
+import { t } from "@lingui/macro";
 
 // Load messages for the supported locales
 i18n.load('en-NZ', enNZMessages);
@@ -57,7 +59,7 @@ export default function RootLayout() {
           name="FlickerFreeVideo"
           options={{
             ...screenOptions,
-            title: 'Flicker-free Video',
+            title: i18n._(t`Flicker-free Video`),
           }}
         />
       </Stack>

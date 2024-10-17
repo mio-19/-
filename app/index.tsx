@@ -5,9 +5,10 @@ import { HelloWave } from '@/components/HelloWave';
 import { ThemedText } from '@/components/ThemedText';
 import { ThemedView } from '@/components/ThemedView';
 import { Colors } from '@/constants/Colors';
+import { t } from "@lingui/macro";
 
 const utilities = [
-  { name: "Flicker-free video", route: "/FlickerFreeVideo" },
+  { name: t`Flicker-free video`, route: "/FlickerFreeVideo" },
 ];
 
 export default function Index() {
@@ -36,7 +37,7 @@ export default function Index() {
                 { color: colorScheme === 'dark' ? Colors.dark.tint : Colors.light.tint }
               ]}
             >
-              <Trans>{utility.name}</Trans>
+              {utility.name}
             </ThemedText>
           </Link>
         ))}

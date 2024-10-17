@@ -13,22 +13,26 @@ msgstr ""
 "Language-Team: \n"
 "Plural-Forms: \n"
 
-#: app/index.tsx:39
-msgid "{0}"
-msgstr "{0}"
-
-#: app/index.tsx:27
+#: app/index.tsx:28
 msgid "Available Utilities"
 msgstr "Available Utilities"
 
-#: app/index.tsx:45
+#: app/index.tsx:46
 msgid "Choose a utility from the list above to get started."
 msgstr "Choose a utility from the list above to get started."
 
-#: app/FlickerFreeVideo.tsx:15
+#: app/index.tsx:11
+msgid "Flicker-free video"
+msgstr "Flicker-free video"
+
+#: app/_layout.tsx:62
+msgid "Flicker-free Video"
+msgstr "Flicker-free Video"
+
+#: app/FlickerFreeVideo.tsx:10
 msgid "Flicker-free video utility coming soon."
 msgstr "Flicker-free video utility coming soon."
 
-#: app/index.tsx:22
+#: app/index.tsx:23
 msgid "Welcome to Crying Cat"
 msgstr "Welcome to Crying Cat"

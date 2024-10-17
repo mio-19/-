@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { StyleSheet, View } from 'react-native';
 import { Picker } from '@react-native-picker/picker';
-import Slider from '@react-native-community/slider';
 import { Trans } from '@lingui/macro';
 import { ThemedView } from '@/components/ThemedView';
 import { ThemedText } from '@/components/ThemedText';
@@ -24,13 +23,16 @@ export default function FlickerFreeVideo() {
     const safeShutterSpeed = 1 / flickerFrequency;
 
     // Calculate shutter angle
-    const angle = (safeShutterSpeed * frameRate * 360);
+    const angle = safeShutterSpeed * frameRate * 360;
     setShutterAngle(Math.round(angle));
 
     // Format shutter speed as a fraction
     const denominator = Math.round(1 / safeShutterSpeed);
     setShutterSpeed(`1/${denominator} sec`);
   };
+
+  // Common frame rates
+  const commonFrameRates = [23.976, 24, 25, 29.97, 30, 48, 50, 59.94, 60, 120];
 
   return (
     <ThemedView style={styles.container}>
@@ -53,19 +55,20 @@ export default function FlickerFreeVideo() {
         </Picker>
       </View>
 
-      {/* Frame Rate Slider */}
-      <View style={styles.sliderContainer}>
+      {/* Frame Rate Selection */}
+      <View style={styles.pickerContainer}>
         <ThemedText style={styles.label}>
-          <Trans>Frame Rate: {frameRate} fps</Trans>
+          <Trans>Select Frame Rate (fps):</Trans>
         </ThemedText>
-        <Slider
-          style={styles.slider}
-          minimumValue={1}
-          maximumValue={120}
-          step={1}
-          value={frameRate}
+        <Picker
+          selectedValue={frameRate}
+          style={styles.picker}
           onValueChange={(value) => setFrameRate(value)}
-        />
+        >
+          {commonFrameRates.map((rate) => (
+            <Picker.Item key={rate} label={`${rate} fps`} value={rate} />
+          ))}
+        </Picker>
       </View>
 
       {/* Display Calculated Values */}
@@ -101,13 +104,6 @@ const styles = StyleSheet.create({
   picker: {
     height: 50,
     width: '100%',
-  },
-  sliderContainer: {
-    marginVertical: 16,
-  },
-  slider: {
-    width: '100%',
-    height: 40,
   },
   resultsContainer: {
     marginVertical: 32,
